@@ -1,0 +1,10 @@
+<h1 class="text-3xl font-bold">Blog - Pancho Macias</h1>
+
+<% @blog_posts.each do |blog_post| %>
+  <h2 class="text-xl font-semibold mt-4">
+    <%= link_to blog_post.title, blog_post, class: "text-blue-500 hover:underline" %>
+  </h2>
+  <p class="text-gray-700">
+    <%= blog_post.body %>
+  </p>
+<% end %>

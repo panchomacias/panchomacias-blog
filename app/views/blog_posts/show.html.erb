@@ -1,0 +1,10 @@
+<h2 class="text-xl font-semibold mb-2">
+  <%= @blog_post.title %>
+</h2>
+<p class="text-gray-700">
+  <%= @blog_post.body %>
+</p>
+<% if user_signed_in? %>
+  <%= link_to "Back", root_path %> |
+  <%= link_to "Edit post", edit_blog_post_path(@blog_post), class: "text-blue-500 hover:underline" %>
+<% end %>
