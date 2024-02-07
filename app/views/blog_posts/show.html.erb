@@ -2,7 +2,7 @@
   <%= @blog_post.title %>
 </h2>
 <p class="text-gray-700">
-  <%= @blog_post.body %>
+  <%= @blog_post.content %>
 </p>
 <% if user_signed_in? %>
   <%= link_to "Back", root_path %> |
